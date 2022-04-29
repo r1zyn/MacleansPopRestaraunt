@@ -31,7 +31,7 @@ export const Navigation: NextComponent = (): JSX.Element => {
 
                 <nav className={styles.links}>
                     <Link href="/" passHref>
-                        <div className={router.pathname === "/" ? styles["link-active"] : "link"}
+                        <div className={router.pathname === "/" ? styles["link-active"] : styles["link"]}
                             onMouseOver={(): void => {
                                 if (router.pathname !== "/") {
                                     const bar: HTMLElement = document.getElementById("link-bar-one") as HTMLElement;
@@ -53,7 +53,7 @@ export const Navigation: NextComponent = (): JSX.Element => {
                     </Link>
 
                     <Link href="/about" passHref>
-                        <div className={router.pathname === "/about" ? styles["link-active"] : "link"}
+                        <div className={router.pathname === "/about" ? styles["link-active"] : styles["link"]}
                             onMouseOver={(): void => {
                                 if (router.pathname !== "/about") {
                                     const bar: HTMLElement = document.getElementById("link-bar-two") as HTMLElement;
@@ -75,37 +75,45 @@ export const Navigation: NextComponent = (): JSX.Element => {
                     </Link>
 
                     <Link href="/menu" passHref>
-                        <div className={styles.link}
+                        <div className={router.pathname === "/menu" ? styles["link-active"] : styles["link"]}
                             onMouseOver={(): void => {
-                                const bar: HTMLElement = document.getElementById("link-bar-three") as HTMLElement;
-                                if (bar) bar.style.width = "100%";
+                                if (router.pathname !== "/menu") {
+                                    const bar: HTMLElement = document.getElementById("link-bar-three") as HTMLElement;
+                                    if (bar) bar.style.width = "100%";
+                                }
                             }}
 
                             onMouseLeave={(): void => {
-                                const bar: HTMLElement = document.getElementById("link-bar-three") as HTMLElement;
-                                if (bar) bar.style.width = "0%";
+                                if (router.pathname !== "/menu") {
+                                    const bar: HTMLElement = document.getElementById("link-bar-three") as HTMLElement;
+                                    if (bar) bar.style.width = "0%";
+                                }
                             }}>
                             <span className={styles["link-title"]}>Menu</span>
                             <span className={styles["link-bar-container"]}>
-                                <span className={styles["link-bar"]} id="link-bar-three" />
+                                <span className={router.pathname === "/menu" ? styles["link-bar-active"] : styles["link-bar"]} id="link-bar-three" />
                             </span>
                         </div>
                     </Link>
 
                     <Link href="/contact" passHref>
-                        <div className={styles.link}
+                        <div className={router.pathname === "/contact" ? styles["link-active"] : styles["link"]}
                             onMouseOver={(): void => {
-                                const bar: HTMLElement = document.getElementById("link-bar-four") as HTMLElement;
-                                if (bar) bar.style.width = "100%";
+                                if (router.pathname !== "/contact") {
+                                    const bar: HTMLElement = document.getElementById("link-bar-four") as HTMLElement;
+                                    if (bar) bar.style.width = "100%";
+                                }
                             }}
 
                             onMouseLeave={(): void => {
-                                const bar: HTMLElement = document.getElementById("link-bar-four") as HTMLElement;
-                                if (bar) bar.style.width = "0%";
+                                if (router.pathname !== "/contact") {
+                                    const bar: HTMLElement = document.getElementById("link-bar-four") as HTMLElement;
+                                    if (bar) bar.style.width = "0%";
+                                }
                             }}>
                             <span className={styles["link-title"]}>Contact</span>
                             <span className={styles["link-bar-container"]}>
-                                <span className={styles["link-bar"]} id="link-bar-four" />
+                                <span className={router.pathname === "/contact" ? styles["link-bar-active"] : styles["link-bar"]} id="link-bar-four" />
                             </span>
                         </div>
                     </Link>
