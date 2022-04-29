@@ -4,6 +4,9 @@
     --ring-color: ;
     --ring-offset-color: ;
     --ring-shadow: 0 0 #0000;
+    --primary-color: #1a1a1a;
+    --secondary-color: rgb(255, 255, 255);
+    --tertiary-color: rgb(243 244 246);
 }
 
 html,
@@ -39,10 +42,10 @@ p {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #1a1a1a;
+    background: var(--primary-color);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #1a1a1a;
+    background: var(--primary-color);
     box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 10000px;
 }

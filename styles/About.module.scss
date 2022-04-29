@@ -7,3 +7,135 @@
     align-items: center;
     text-align: center;
 }
+
+.title {
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 1;
+    letter-spacing: -0.05rem;
+    width: 80%;
+}
+
+.description {
+    width: 60vw;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.learn-more-button-container {
+    display: inline-flex;
+    border-radius: 0.375rem;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    margin-top: 2rem;
+}
+
+.learn-more-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: rgb(255 255 255);
+    white-space: nowrap;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 0.375rem;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    cursor: pointer;
+}
+
+.learn-more-button:hover {
+    background-color: #0e0e0e;
+}
+
+.learn-more-button:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: var(--ring-inset) 0 0 0 calc(2px + var(--ring-offset-width))
+        var(--ring-color);
+    --tw-ring-offset-width: 2px;
+    box-shadow: 0 0 0 var(--ring-offset-width) var(--ring-offset-color),
+        var(--ring-shadow);
+    --ring-color: rgb(59 130 246);
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.section:nth-child(2n) {
+    background-color: var(--tertiary-color);
+}
+
+.styled-bar {
+    height: 0.75rem;
+    width: 8rem;
+    border: none;
+    background-color: var(--primary-color);
+}
+
+.section-title {
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 900;
+}
+
+.section-description {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+@media (max-width: 640px) {
+    .title {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 90vw;
+    }
+
+    .section {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+
+    .section-title {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .description {
+        width: 90vw;
+    }
+
+    .learn-more-button-container {
+        margin-top: 1.5rem;
+    }
+
+    .section {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
