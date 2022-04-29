@@ -1,0 +1,48 @@
+:root {
+    --ring-inset: ;
+    --ring-offset-width: 0px;
+    --ring-color: ;
+    --ring-offset-color: ;
+    --ring-shadow: 0 0 #0000;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1a1a1a;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 10000px;
+}

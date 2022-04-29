@@ -1,0 +1,50 @@
+{
+    // File options
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.insertFinalNewline": false,
+    "files.trimFinalNewlines": true,
+    // Visual Studio Code editor options
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true,
+    "editor.maxTokenizationLineLength": 100000,
+    "extensions.ignoreRecommendations": false,
+    // JavaScript file settings
+    "javascript.format.semicolons": "insert",
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.preferences.quoteStyle": "double",
+    // TypeScript file settings
+    "typescript.format.semicolons": "insert",
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.preferences.quoteStyle": "double",
+    // JSON file format settings
+    "json.format.enable": true,
+    // CSS/SCSS linting settings
+    "css.lint.unknownAtRules": "ignore",
+    "css.lint.unknownProperties": "ignore",
+    "css.lint.emptyRules": "ignore",
+    "scss.lint.unknownAtRules": "ignore",
+    "scss.lint.unknownProperties": "ignore",
+    "scss.lint.emptyRules": "ignore",
+    // Formatter options
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    }
+}
