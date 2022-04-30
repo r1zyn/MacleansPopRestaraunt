@@ -2,25 +2,26 @@ import { Image, Link } from "../components/next";
 import type { NextPage } from "next";
 import { PageContainer } from "../components/layout";
 
+import { useEffect } from "react";
+
 import slideImageOne from "../public/images/1024px-Met_Scallops_(6766466185).jpg";
 import slideImageTwo from "../public/images/beef-2509104_1920.jpg";
 import slideImageThree from "../public/images/Hokey_pokey_ice_cream.jpg";
 import styles from "../styles/Home.module.scss";
-import { useEffect } from "react";
 
 const Home: NextPage = () => {
     useEffect((): void => {
         let slideIndex: number = 0;
         showSlides();
 
-        function showSlides() {
+        function showSlides(): void {
             let i: number;
             const slides: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("slide") as HTMLCollectionOf<HTMLElement>;
             const dots: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("slideshow-dot") as HTMLCollectionOf<HTMLElement>;
 
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
-            }
+            }   
 
             slideIndex++;
 

@@ -19,7 +19,7 @@ const About: NextPage = () => {
                     </div>
                 </span>
             </div>
-            
+
             <div className={styles["section"]} id="section-one" data-aos="fade-up" data-aos-duration="2000">
                 <hr className={styles["styled-bar"]} />
                 <h1 className={styles["section-title"]}>Our Story</h1>
@@ -34,8 +34,33 @@ const About: NextPage = () => {
 
             <div className={styles["section"]} id="section-three" data-aos="fade-up" data-aos-duration="2000">
                 <hr className={styles["styled-bar"]} />
-                <h1 className={styles["section-title"]}>Meet the team</h1>
-                <p className={styles["section-description"]}>The students will prepare and cook a three-course meal from a selected menu, designed by them, around a theme they choose themselves. Each course features several options so that each guest can have their own experience! The theme of the menu will change for every pop up. Students spend a day preparing their dishes and in the evening split into a kitchen team and a front of house team.</p>
+                <h1 className={styles["section-title"]}>Meet The Team</h1>
+                <br />
+                <div className={styles["team-section"]}>
+                    <div className={styles["team-card"]}>
+                        <div className={styles["team-image"]} />
+                        <div className={styles["team-info"]}>
+                            <h1 className={styles["team-name"]}>John Doe</h1>
+                            <p className={styles["team-position"]}>Head Chef</p>
+                        </div>
+                    </div>
+
+                    <div className={styles["team-card"]}>
+                        <div className={styles["team-image"]} />
+                        <div className={styles["team-info"]}>
+                            <h1 className={styles["team-name"]}>Jane Doe</h1>
+                            <p className={styles["team-position"]}>Chef</p>
+                        </div>
+                    </div>
+
+                    <div className={styles["team-card"]}>
+                        <div className={styles["team-image"]} />
+                        <div className={styles["team-info"]}>
+                            <h1 className={styles["team-name"]}>Richard Doe</h1>
+                            <p className={styles["team-position"]}>Waiter</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </PageContainer>
     );
