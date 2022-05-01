@@ -150,9 +150,7 @@ const Home: NextPage = () => {
                 </div>
             </div>
 
-            <br />
-
-            <div style={{ textAlign: "center" }}>
+            <div className={styles["slideshow-dots"]}>
                 <span className="slideshow-dot" style={{
                     height: "15px",
                     width: "15px",

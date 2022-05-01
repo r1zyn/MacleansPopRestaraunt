@@ -33,11 +33,15 @@ function App({ Component, pageProps }: AppProps) {
         router.events.on("routeChangeStart", handleStart);
         router.events.on("routeChangeComplete", handleStop);
         router.events.on("routeChangeError", handleStop);
+        router.events.on("hashChangeStart", handleStart);
+        router.events.on("hashChangeComplete", handleStop);
 
         return (): void => {
             router.events.off("routeChangeStart", handleStart);
             router.events.off("routeChangeComplete", handleStop);
             router.events.off("routeChangeError", handleStop);
+            router.events.off("hashChangeStart", handleStart);
+            router.events.off("hashChangeComplete", handleStop);
         };
     }, [router.events]);
 
