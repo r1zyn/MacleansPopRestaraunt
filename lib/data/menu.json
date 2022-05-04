@@ -1,0 +1,93 @@
+{
+    "entree": [
+        {
+            "name": "Corn fritter stack",
+            "price": "$9",
+            "description": "Sweetcorn fritters served with coriander, cherry tomato relish & soft poached egg",
+            "type": "Entree",
+            "imageURL": "/images/4390644257_09d27b0acc_b.jpg"
+        },
+        {
+            "name": "Garlic lemon scallops",
+            "price": "$12",
+            "description": "Pan seared scallops served with garlic and lemon butter sauce",
+            "type": "Entree",
+            "imageURL": "/images/1024px-Met_Scallops_(6766466185).jpg"
+        },
+        {
+            "name": "Maple baked kumara wedges",
+            "price": "$8",
+            "description": "Oven-baked kumara wedges that are sticky, sweet, salty, crunchy and soft all at the same time. Served with an aioli dipping sauce",
+            "type": "Entree",
+            "imageURL": "/images/AdobeStock_156490702.jpeg"
+        }
+    ],
+    "main": [
+        {
+            "name": "Kiwi lamb cutlets",
+            "price": "$16",
+            "description": "A delicious crunch to these cutlets, using oregano and paprika. Drizzled with a tart lemon vinaigrette and served with a side of baby potatoes and leafy greens.",
+            "type": "Main",
+            "imageURL": "/images/AdobeStock_128483152.jpeg"
+        },
+        {
+            "name": "Scotch fillet",
+            "price": "$15",
+            "description": "Angus scotch fillet steak served with sauce and garden vegetables.",
+            "type": "Main",
+            "imageURL": "/images/asparagus-barbecue-bbq-675951.jpg"
+        },
+        {
+            "name": "Fish & chips",
+            "price": "$14",
+            "description": "Beer battered fresh NZ snapper served with fries and a side of kiwi coleslaw",
+            "type": "Main",
+            "imageURL": "/images/AdobeStock_4382677.jpeg"
+        }
+    ],
+    "dessert": [
+        {
+            "name": "Mini pavlova",
+            "price": "$8",
+            "description": "Baked meringue with whipped cream and sliced fresh fruit",
+            "type": "Dessert",
+            "imageURL": "/images/AdobeStock_119816156.jpeg"
+        },
+        {
+            "name": "Hokey pokey ice cream",
+            "price": "$7",
+            "description": "Hokey pokey ice cream with hokey pokey toffee and hot toffee sauce",
+            "type": "Dessert",
+            "imageURL": "/images/Hokey_pokey_ice_cream.jpg"
+        },
+        {
+            "name": "Kiwifruit cheesecake",
+            "price": "$9",
+            "description": "Kiwi inspired layered dessert cake",
+            "type": "Dessert",
+            "imageURL": "/images/AdobeStock_41896825.jpeg"
+        }
+    ],
+    "beverages": [
+        {
+            "name": "Wine",
+            "price": "BYO",
+            "type": "Beverage"
+        },
+        {
+            "name": "L&P",
+            "price": "$1",
+            "type": "Beverage"
+        },
+        {
+            "name": "Freshing brewed Tea",
+            "price": "$2.50",
+            "type": "Beverage"
+        },
+        {
+            "name": "Espresso Coffee",
+            "price": "$2.50",
+            "type": "Beverage"
+        }
+    ]
+}

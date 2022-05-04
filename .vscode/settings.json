@@ -36,7 +36,7 @@
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "[json]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+        "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
