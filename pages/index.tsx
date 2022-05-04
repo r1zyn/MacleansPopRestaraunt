@@ -1,6 +1,7 @@
 import { Image, Link } from "../components/next";
 import type { NextPage } from "next";
 import { PageContainer } from "../components/layout";
+import { NextRouter, useRouter } from "next/router";
 
 import { useEffect } from "react";
 
@@ -10,30 +11,35 @@ import slideImageThree from "../public/images/Hokey_pokey_ice_cream.jpg";
 import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
+    const router: NextRouter = useRouter();
+
     useEffect((): void => {
-        let slideIndex: number = 0;
-        showSlides();
+        if (router.pathname === "/") {
+            let slideIndex: number = 0;
+            showSlides();
 
-        function showSlides(): void {
-            let i: number;
-            const slides: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("slide") as HTMLCollectionOf<HTMLElement>;
-            const dots: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("slideshow-dot") as HTMLCollectionOf<HTMLElement>;
+            // @ts-ignore
+            function showSlides(): void {
+                let i: number;
+                const slides: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("slide") as HTMLCollectionOf<HTMLElement>;
+                const dots: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("slideshow-dot") as HTMLCollectionOf<HTMLElement>;
 
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }   
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
 
-            slideIndex++;
+                slideIndex++;
 
-            if (slideIndex > slides.length) slideIndex = 1;
+                if (slideIndex > slides.length) slideIndex = 1;
 
-            for (i = 0; i < dots.length; i++) {
-                dots[i].style.backgroundColor = "#bbb";
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].style.backgroundColor = "#bbb";
+                }
+
+                slides[slideIndex - 1].style.display = "flex";
+                dots[slideIndex - 1].style.backgroundColor = "#717171";
+                setTimeout(showSlides, 5000);
             }
-
-            slides[slideIndex - 1].style.display = "flex";
-            dots[slideIndex - 1].style.backgroundColor = "#717171";
-            setTimeout(showSlides, 5000);
         }
     });
 
