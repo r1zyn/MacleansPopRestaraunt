@@ -61,7 +61,15 @@ const Error404: NextPage = () => {
                     fontWeight: "normal",
                     lineHeight: "inherit",
                     cursor: "pointer",
-                }}>Return to home</span>
+                    transform: "transition 500ms ease-in-out",
+                    paddingBottom: "0.2rem"
+                }} onMouseEnter={(): void => {
+                    const returnToHome: HTMLElement = document.getElementById("return-to-home") as HTMLElement;
+                    returnToHome.style.borderBottom = "1px solid #1A1A1A";
+                }} onMouseLeave={(): void => {
+                    const returnToHome: HTMLElement = document.getElementById("return-to-home") as HTMLElement;
+                    returnToHome.style.borderBottom = "none";
+                }} id="return-to-home">Return to home</span>
             </Link>
         </footer>
     </div>;
