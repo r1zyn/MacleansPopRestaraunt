@@ -1,5 +1,6 @@
 import type { AppProps } from "next/app";
 import { NextRouter, useRouter } from "next/router";
+import { ScrollButton } from "../components/ScrollButton";
 
 import { useEffect } from "react";
 
@@ -45,7 +46,10 @@ function App({ Component, pageProps }: AppProps) {
         };
     }, [router.events]);
 
-    return <Component {...pageProps} />;
+    return <>
+    <Component {...pageProps} />
+    <ScrollButton />
+    </>
 }
 
 export default App;

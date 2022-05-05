@@ -51,3 +51,35 @@ p {
     background: var(--primary-color);
     box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 10000px;
 }
+
+.fade-in {
+    opacity: 0;
+    animation: fade-in 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.fade-out {
+    opacity: 1;
+    animation: fade-out 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

@@ -1,3 +1,4 @@
+import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import type { NextComponent } from "../lib/next";
 
 import Head from "next/head";
@@ -38,6 +39,7 @@ const Meta: NextComponent<MetaProps> = ({ title, description }: MetaProps): JSX.
 
 export {
     Head,
+    Icon,
     Image,
     Link,
     Meta,
