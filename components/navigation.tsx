@@ -20,7 +20,7 @@ export const Navigation: NextComponent = (): JSX.Element => {
     }, []);
 
     return (
-        <section className={styles.nav}>
+        <section className={pageTop ? styles.nav : styles["nav-fixed"]}>
             <div className={styles.container}>
                 <Link href="/" passHref>
                     <div className={styles["title-container"]}>

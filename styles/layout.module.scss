@@ -20,7 +20,7 @@
 }
 
 .nav {
-    position: relative;
+    position: fixed;
     width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -28,6 +28,20 @@
     background-color: rgb(255 255 255);
     z-index: 1;
     order: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-fixed {
+    position: fixed;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: rgb(55 65 81);
+    background-color: rgb(255 255 255);
+    z-index: 1;
+    order: 1;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    transition: all 0.5s ease-in-out;
 }
 
 .content {
