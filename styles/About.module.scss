@@ -84,7 +84,7 @@
 
 .styled-bar {
     height: 0.75rem;
-    width: 8rem;
+    width: 6.5rem;
     border: none;
     background-color: var(--primary-color);
 }
@@ -118,6 +118,11 @@
     align-items: center;
     justify-content: center;
     border-radius: 1rem;
+    transition: all 500ms ease-in-out;
+}
+
+.team-card:hover {
+    transform: translateY((-2%));
 }
 
 .team-image {

@@ -32,21 +32,21 @@ const Menu: NextPage = () => {
 
         <div className={styles.menu} id="menu">
             <div className={styles["course-dish-container"]} data-aos="fade-up" data-aos-duration="2000">
-                <h1>Entrees</h1>
+                <h1 className={styles["course-dish-container-title"]}>Entrees</h1>
                 <div className={styles["dishes"]}>
                     {dishes.entree.map((dish): JSX.Element => <Item key={dish.name} description={dish.description} title={dish.name} imageURL={dish.imageURL} price={dish.price} />)}
                 </div>
             </div>
 
             <div className={styles["course-dish-container"]} data-aos="fade-up" data-aos-duration="2000">
-                <h1>Mains</h1>
+                <h1 className={styles["course-dish-container-title"]}>Mains</h1>
                 <div className={styles["dishes"]}>
                     {dishes.main.map((dish): JSX.Element => <Item key={dish.name} description={dish.description} title={dish.name} imageURL={dish.imageURL} price={dish.price} />)}
                 </div>
             </div>
 
             <div className={styles["course-dish-container"]} data-aos="fade-up" data-aos-duration="2000">
-                <h1>Desserts</h1>
+                <h1 className={styles["course-dish-container-title"]}>Desserts</h1>
                 <div className={styles["dishes"]}>
                     {dishes.dessert.map((dish): JSX.Element => <Item key={dish.name} description={dish.description} title={dish.name} imageURL={dish.imageURL} price={dish.price} />)}
                 </div>
