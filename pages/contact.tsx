@@ -1,26 +1,13 @@
+import { Map } from "../components/Map";
+import { Marker } from "../components/Marker";
 import type { NextPage } from "next";
 import { PageContainer } from "../components/layout";
+import { Wrapper } from "@googlemaps/react-wrapper";
 
-import { useEffect } from "react";
 import styles from "../styles/Contact.module.scss";
 
 const Contact: NextPage = () => {
-    useEffect((): void => {
-        const location: { lat: number, lng: number; } = { lat: -36.882576793148345, lng: 174.91429516570236 };
-
-        const map: google.maps.Map = new google.maps.Map(
-            document.getElementById("map") as HTMLElement,
-            {
-                zoom: 4,
-                center: location,
-            }
-        );
-
-        const marker: google.maps.Marker = new google.maps.Marker({
-            position: location,
-            map: map,
-        });
-    });
+    const location: { lat: number, lng: number; } = { lat: -36.882576793148345, lng: 174.91429516570236 };
 
     return <PageContainer meta={{
         title: "Contact | Macleans Pop Up Restaurant",
@@ -65,7 +52,14 @@ const Contact: NextPage = () => {
             </div>
         </div>
 
-        <div id="map"></div>
+        <Wrapper apiKey={process.env.API_KEY}>
+            <Map
+                center={location}
+                style={{ height: "100%" }}
+            >
+                <Marker position={location} />
+            </Map>
+        </Wrapper>
     </PageContainer>;
 };
 

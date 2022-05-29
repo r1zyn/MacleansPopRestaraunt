@@ -17,8 +17,8 @@ export const Item: NextComponent<ItemProps> = ({ className, style, imageURL, tit
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
-            height: "7rem",
-            width: "7rem"
+            height: "8rem",
+            width: "11rem"
         }} />
 
         <div className={styles["item-details"]}>

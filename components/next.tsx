@@ -34,11 +34,6 @@ const Meta: NextComponent<MetaProps> = ({ title, description }: MetaProps): JSX.
         <link rel="icon" type="png" href="/icons/logo.png" />
         <link rel="shortcut icon" type="png" href="/icons/logo.png" />
         <link rel="apple-touch-icon" type="png" href="/icons/logo.png" />
-
-        <script
-            src={`https://maps.googleapis.com/maps/api/js?key=${process.env.API_KEY}&callback=initMap`}
-            async
-        ></script>
     </Head>;
 };
 
