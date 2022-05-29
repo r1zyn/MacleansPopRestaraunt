@@ -60,6 +60,8 @@ const Contact: NextPage = () => {
                 <Marker position={location} />
             </Map>
         </Wrapper>
+
+        <div className={styles["school-map"]} />
     </PageContainer>;
 };
 
