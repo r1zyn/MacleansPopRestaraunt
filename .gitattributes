@@ -7,3 +7,8 @@
 *.md linguist-vendored=false
 *.md linguist-generated=false
 *.md linguist-documentation=false
+
+*.tsx linguist-detectable=true
+*.tsx linguist-vendored=false
+*.tsx linguist-generated=false
+*.tsx linguist-documentation=false
